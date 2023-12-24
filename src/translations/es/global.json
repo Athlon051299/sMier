@@ -1,0 +1,8 @@
+{
+    "navrouters":{
+    "home":"Inicio",
+    "about":"Sobre mi",
+    "projects":"Proyectos",
+    "contactme":"Contacta me"
+    }
+}

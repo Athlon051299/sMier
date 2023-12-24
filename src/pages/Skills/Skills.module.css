@@ -1,0 +1,131 @@
+.skills {
+  position: relative;
+  max-width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.skills.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.skillContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100vw;
+  height: auto;
+}
+.title {
+  font-weight: 300;
+  margin-top: 14px;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.boxSkills {
+  text-overflow: inherit inherit;
+  max-width: 500px;
+  
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.cardskills {
+  
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 2vh;
+  display: flex;
+  margin: 0 20px;
+  margin-top: 2vh;
+  flex-direction: column;
+  background-color: rgb(26, 26, 26);
+  opacity: 0.4;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 13px black;
+  gap: 12px;
+}
+.cardskills.visible {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Añadido para la animación suave */
+}
+.navButtonLeft,
+.navButtonRight {
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0 5px;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s ease-in-out;
+}
+.cardskills.hidden {
+  opacity: 0;
+}
+.navButtonLeft {
+  left: 10px;
+}
+
+.navButtonRight {
+  right: 10px;
+}
+.cardskills:hover,
+.navButtonLeft:hover,
+.navButtonRight:hover {
+  opacity: 1;
+}
+.imgbox {
+  margin-right: 18px;
+}
+.imgbox img {
+  border-radius: 14px;
+
+  max-width: 100%;
+  filter: grayscale();
+  object-fit: cover;
+  height: 20vh;
+  width: 350px;
+}
+.boxtext {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  text-align: center;
+}
+.boxtext h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.boxtext p {
+  color: rgb(186, 186, 186);
+}
+
+@media (max-width: 770px) {
+  .imgbox img {
+    display: none;
+  }
+  .boxtext p{
+    font-size: 15px;
+  }
+  .boxtext h1 {
+    font-size: 20px;
+  }
+  .skillContainer {
+    width: 80vw;
+  }
+}

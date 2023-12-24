@@ -1,0 +1,40 @@
+.boxleng {
+  position: relative;
+  margin: 0 3vw;
+  display: flex;
+  cursor: pointer;
+}
+.toggleleng {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 10px;
+  background-color: #2084e5;
+  border-radius: 30px;
+  width: 50px;
+  height: 25px;
+}
+button {
+  border: none;
+}
+.boxleng .p {
+  cursor: pointer;
+}
+.toggleleng .indicador {
+  background-color: #fff;
+  width: 27px;
+  height: 20px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  margin-top: 1vw;
+
+  margin-bottom: 1vw;
+}
+.indicadorDesactivado {
+  display: flex;
+  justify-content: flex-end;
+}
+.activadoleng {
+  display: flex;
+  justify-content: flex-start;
+}

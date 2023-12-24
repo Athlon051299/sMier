@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  user-select: none;
+  background-color: #0f0f0f;
+  color: #ffff;
+}
+.active {
+
+  border-radius: 8px;
+  border: 2px #2084e5 solid;
+  padding: 10px;
+}
